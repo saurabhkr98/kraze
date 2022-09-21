@@ -1,8 +1,3 @@
-# kraze
-Use google geo coding api to get location for inputs with caching and  jUnit test cases
-
-################################################################################################################
-
 The repository is written in java with spring boot as framework and jUnit for writing test cases. An in memory caching is implemented using a static hashMap.
 
 When you run the DemoApplication an endpoint is exposed in your local machine with the below curl.
@@ -24,6 +19,5 @@ Below is an example of what output.txt file will look like if it is generated an
 8.34,24.78
 
 For the failed requests you will receive errormessage and error status code (4xx or 5xx)
-
 
 

@@ -1,0 +1,22 @@
+package com.example.demo.models;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+@Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class AddressComponent {
+
+    @JsonProperty("long_name")
+    private String longName;
+
+    @JsonProperty("short_name")
+    private String shortName;
+
+    private List<String> types;
+}
